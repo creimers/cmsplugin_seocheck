@@ -12,5 +12,5 @@ class SeoCheckToolbar(CMSToolbar):
                 'seo_check',
                 'SEO'
                 )
-        url = reverse('seo_check:check_modal')
+        url = reverse('cmsplugin_seocheck:check_modal')
         seo_check_menu.add_modal_item(name='SEO-Check', url=url)
