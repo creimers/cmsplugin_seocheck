@@ -1,0 +1,25 @@
+body{
+  font-family:  Helvetica, sans-serif;
+}
+
+.seo-headline{
+  padding-bottom: 5px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.seo-item{
+  padding-bottom: 5px;
+}
+
+.fa-check-circle{
+  color: #27ae60;
+}
+
+.fa-times-circle{
+  color: red;
+}
+
+.fa-exclamation-triangle{
+  color: rgb(255, 203, 0);
+}

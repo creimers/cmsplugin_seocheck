@@ -1,0 +1,41 @@
+{% load cms_tags menu_tags sekizai_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SEO-Check</title>
+    <link rel="stylesheet" href="{{STATIC_URL}}cmsplugin_seocheck/bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}cmsplugin_seocheck/css/style.css">
+  </head>
+  <body>
+
+    <div class="seo-headline">Titel</div>
+    <div class="page-title-yes seo-item"><i class="fa fa-check-circle"></i> Es ist ein Seitentitel gesetzt.</div>
+    <div class="page-title-yes seo-item">
+      <i class="fa fa-check-circle" id="page-title-length-icon"></i> Der Titel ist <span id="page-title-length"></span> Zeichen lang.
+      <span id="page-title-suggestion">Empfohlen sind zwischen 40 und 70 Zeichen.</span>
+      <span id="page-title-good-length">Das ist eine gute Länge.</span>
+    </div>
+    <div id="page-title-no" class="seo-item"><i class="fa fa-times-circle"></i> Es ist kein Seitentitel gesetzt.</div>
+
+    <div class="seo-headline">Meta-Beschreibung</div>
+    <div id="meta-description-yes" class="seo-item"><i class="fa fa-check-circle"></i> Es ist eine Meta-Beschreibung gesetzt.</div>
+    <div id="meta-description-no" class="seo-item"><i class="fa fa-times-circle"></i> Es ist keine Meta-Beschreibung gesetzt.</div>
+
+    <div class="seo-headline">Überschriften</div>
+    <div class="h1-yes seo-item" id="one-h1"><i class="fa fa-check-circle"></i> Es ist genau eine h1 Überschrift gesetzt.</div>
+    <div class="h1-yes seo-item" id="multiple-h1"><i class="fa fa-exclamation-triangle"></i> Es sind mehrere h1 Überschriften gesetzt.</div>
+    <div class="h1-no seo-item"><i class="fa fa-times-circle"></i> Es ist keine h1 Überschrift gesetzt.</div>
+
+    <div class="h2-yes seo-item"><i class="fa fa-check-circle"></i> Es sind Unterüberschriften vorhanden.</div>
+    <div class="h2-no seo-item"><i class="fa fa-times-circle"></i> Es wurden keine Unterüberschriften gefunden.</div>
+
+    <div class="seo-headline">Text</div>
+    <div class="text-yes seo-item"><i class="fa fa-check-circle"></i> Auf der Seite ist Text vorhanden. Dieser ist <span id="word-count"></span> Wörter lang.</div>
+    <div class="text-no seo-item"><i class="fa fa-times-circle"></i> Auf der Seite ist kein Text vorhanden.</div>
+
+    <script src="{{STATIC_URL}}cmsplugin_seocheck/bower_components/jquery/dist/jquery.js"></script>
+    <script src="{{STATIC_URL}}cmsplugin_seocheck/js/check.js"></script>
+
+  </body>
+</html>
