@@ -39,6 +39,11 @@ $(window).load(function(){
   if (metaDescription) {
     $('.meta-description-yes').show();
     $('#meta-length').text(metaDescription.length);
+    if (metaDescription.length > 156) {
+      $('#meta-length-icon').removeClass('fa-check-circle'); 
+      $('#meta-length-icon').addClass('fa-exclamation-triangle'); 
+      $('#meta-too-long').show();
+    }
   }
   else{
     $('#meta-description-no').show();
