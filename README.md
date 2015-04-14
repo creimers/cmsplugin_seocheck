@@ -7,7 +7,7 @@ A djangocms plugin to check SEO aspects of your page.
 
 ## Installation
 
-* ``pip install cmsplugin_seocheck``
+* ``pip install git+ssh://git@github.com/creimers/cmsplugin_seocheck.git``
 
 * add ``cmsplugin_seocheck`` to ``INSTALLED_APPS`` in ``settings.py``
 
