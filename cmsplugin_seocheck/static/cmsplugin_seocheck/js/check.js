@@ -1,19 +1,9 @@
 $(window).load(function(){
   // SETUP
-  //$('.page-title-yes').hide();
   $('#page-title-suggestion').hide();
   $('#page-title-good-length').hide();
-  //$('#page-title-no').hide();
-  //$('#meta-description-yes').hide();
-  //$('#meta-description-no').hide();
 
   $('.seo-item').hide();
-
-  //$('.h1-yes').hide();
-  //$('.h1-no').hide();
-
-  //$('.h2-yes').hide();
-  //$('.h2-no').hide();
 
   var modalTitle = $('#cms_toolbar .cms_modal .cms_modal-title', window.parent.document);
 
@@ -47,9 +37,8 @@ $(window).load(function(){
   if (metaDescription) {metaDescription = metaDescription.attr("content");}
 
   if (metaDescription) {
-    $('#meta-description-yes').show();
-    var descriptionLength = metaDescription.length;
-    console.log(descriptionLength);
+    $('.meta-description-yes').show();
+    $('#meta-length').text(metaDescription.length);
   }
   else{
     $('#meta-description-no').show();
