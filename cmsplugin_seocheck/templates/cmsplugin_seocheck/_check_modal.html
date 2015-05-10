@@ -1,4 +1,4 @@
-{% load cms_tags menu_tags sekizai_tags %}
+{% load cms_tags menu_tags sekizai_tags i18n %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <div class="seo-headline">Titel</div>
+    <div class="seo-headline">{% trans "Title" %}</div>
     <div class="page-title-yes seo-item"><i class="fa fa-check-circle"></i> Es ist ein Seitentitel gesetzt.</div>
     <div class="page-title-yes seo-item">
       <i class="fa fa-check-circle" id="page-title-length-icon"></i> Der Titel ist <span id="page-title-length"></span> Zeichen lang.
