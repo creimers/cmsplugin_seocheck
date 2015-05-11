@@ -7,14 +7,18 @@
 [![Development Status](https://pypip.in/status/cmsplugin_seocheck/badge.svg)](https://pypi.python.org/pypi/cmsplugin_seocheck/)
 # djangocms SEO check plugin
 
-A djangocms plugin to check SEO aspects of your page. Inspired by [yoast](https://yoast.com/).
+A djangocms plugin to check SEO aspects of your page. Inspired by [yoast](https://yoast.com/) for wordpress.
 
 This app is far from perfect / complete.
 
 ## Installation
 
-* ``pip install git+ssh://git@github.com/creimers/cmsplugin_seocheck.git``
+* ``pip install cmsplugin_seocheck``
 
 * add ``'cmsplugin_seocheck'`` to ``INSTALLED_APPS`` in ``settings.py``
 
-* add ``url(r'^originalseourl/', include('cmsplugin_seocheck.urls', namespace="cmsplugin_seocheck")),`` to ``myproject/urls.py``
+* add ``url(r'^originalseourl/', include('cmsplugin_seocheck.urls', namespace="cmsplugin_seocheck")),`` to ``myproject/urls.py`` (before the cms' urls).
+
+## Example
+
+![preview](example.png)
