@@ -35,9 +35,6 @@ HELPER_SETTINGS = {
     'MIDDLEWARE_CLASSES': [
         'django.contrib.messages.middleware.MessageMiddleware',
     ],
-    'MIGRATION_MODULES': {
-        'cms': 'cms.migrations_django',
-    },
 
     'SITE_ID': 1,
 }
