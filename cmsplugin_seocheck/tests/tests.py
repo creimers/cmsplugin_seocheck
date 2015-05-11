@@ -1,3 +1,5 @@
+from django.test.utils import override_settings
+from cms.test_utils.testcases import CMSTestCase
 from django.test import TestCase, RequestFactory
 from django.core.urlresolvers import reverse
 
@@ -9,7 +11,7 @@ from cms.toolbar.items import ModalItem
 from djangocms_helper.utils import create_user
 
 
-class SEOViewTest(TestCase):
+class SEOViewTest(CMSTestCase):
 
     def get_request(self):
         page = create_page(u'page one', 'fullwidth.html', language='en')
