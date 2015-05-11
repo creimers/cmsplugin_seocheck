@@ -35,10 +35,12 @@ class SEOViewTest(TestCase):
         return request
 
     def test_get(self):
+        urls = 'cmsplugin_seocheck.tests.urls'
         response = self.client.get('/en/originalseourl/')
         self.assertEqual(response.status_code, 200)
 
     def test_toolbar(self):
+        urls = 'cmsplugin_seocheck.tests.urls'
         request = self.get_request()
         toolbar = CMSToolbar(request)
         toolbar.get_left_items()
