@@ -13,7 +13,7 @@ This app is far from perfect / complete.
 
 ## Installation
 
-* ``pip install cmsplugin_seocheck``
+* ``pip install --pre cmsplugin_seocheck``
 
 * add ``'cmsplugin_seocheck'`` to ``INSTALLED_APPS`` in ``settings.py``
 
