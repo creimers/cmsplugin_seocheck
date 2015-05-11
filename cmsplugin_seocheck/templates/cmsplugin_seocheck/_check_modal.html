@@ -10,30 +10,30 @@
   <body>
 
     <div class="seo-headline">{% trans "Title" %}</div>
-    <div class="page-title-yes seo-item"><i class="fa fa-check-circle"></i> Es ist ein Seitentitel gesetzt.</div>
+    <div class="page-title-yes seo-item"><i class="fa fa-check-circle"></i> {% trans "The page has a title." %}</div>
     <div class="page-title-yes seo-item">
-      <i class="fa fa-check-circle" id="page-title-length-icon"></i> Der Titel ist <span id="page-title-length"></span> Zeichen lang.
-      <span id="page-title-suggestion">Empfohlen sind zwischen 40 und 70 Zeichen.</span>
-      <span id="page-title-good-length">Das ist eine gute Länge.</span>
+      <i class="fa fa-check-circle" id="page-title-length-icon"></i> {% trans "The title is" %} <span id="page-title-length"></span> {% trans "characters long." %}
+      <span id="page-title-suggestion">{% trans "The recommended length is between 40 and 70 characters." %}</span>
+      <span id="page-title-good-length">{% trans "That is a good length." %}</span>
     </div>
-    <div id="page-title-no" class="seo-item"><i class="fa fa-times-circle"></i> Es ist kein Seitentitel gesetzt.</div>
+    <div id="page-title-no" class="seo-item"><i class="fa fa-times-circle"></i> {% trans "The page doesn't have a title yet." %}</div>
 
-    <div class="seo-headline">Meta-Beschreibung</div>
-    <div class="meta-description-yes seo-item"><i class="fa fa-check-circle"></i> Es ist eine Meta-Beschreibung gesetzt.</div>
-    <div class="meta-description-yes seo-item"><i id="meta-length-icon" class="fa fa-check-circle"></i> Die Meta-Beschreibung hat eine Länge von <span id="meta-length"></span> Zeichen. <span id="meta-too-long" style="display: none;">Empohlen sind maximal 156 Zeichen.</span></div>
-    <div id="meta-description-no" class="seo-item"><i class="fa fa-times-circle"></i> Es ist keine Meta-Beschreibung gesetzt.</div>
+    <div class="seo-headline">{% trans "Meta description." %}</div>
+    <div class="meta-description-yes seo-item"><i class="fa fa-check-circle"></i> {% trans "The page has a meta description." %}</div>
+    <div class="meta-description-yes seo-item"><i id="meta-length-icon" class="fa fa-check-circle"></i> {% trans "The meta description has a length of" %} <span id="meta-length"></span> {% trans "characters." %} <span id="meta-too-long" style="display: none;">{% trans "A max of 156 characters is recommended." %}</span></div>
+    <div id="meta-description-no" class="seo-item"><i class="fa fa-times-circle"></i> {% trans "The page doesn't have a meta description." %}</div>
 
-    <div class="seo-headline">Überschriften</div>
-    <div class="h1-yes seo-item" id="one-h1"><i class="fa fa-check-circle"></i> Es ist genau eine h1 Überschrift gesetzt.</div>
-    <div class="h1-yes seo-item" id="multiple-h1"><i class="fa fa-exclamation-triangle"></i> Es sind mehrere h1 Überschriften gesetzt.</div>
-    <div class="h1-no seo-item"><i class="fa fa-times-circle"></i> Es ist keine h1 Überschrift gesetzt.</div>
+    <div class="seo-headline">{% trans "Headlines" %}</div>
+    <div class="h1-yes seo-item" id="one-h1"><i class="fa fa-check-circle"></i> {% trans "There is exactly one h1 heading on this page." %}</div>
+    <div class="h1-yes seo-item" id="multiple-h1"><i class="fa fa-exclamation-triangle"></i> {% trans "There are multiple h1 headings on this page." %}</div>
+    <div class="h1-no seo-item"><i class="fa fa-times-circle"></i> {% trans "This page doesn't have a h1 title." %}</div>
 
-    <div class="h2-yes seo-item"><i class="fa fa-check-circle"></i> Es sind Unterüberschriften vorhanden.</div>
-    <div class="h2-no seo-item"><i class="fa fa-times-circle"></i> Es wurden keine Unterüberschriften gefunden.</div>
+    <div class="h2-yes seo-item"><i class="fa fa-check-circle"></i> {% trans "This page has sub headings." %}</div>
+    <div class="h2-no seo-item"><i class="fa fa-times-circle"></i> {% trans "This page has no sub headings." %}</div>
 
     <div class="seo-headline">Text</div>
-    <div class="text-yes seo-item"><i class="fa fa-check-circle"></i> Auf der Seite ist Text vorhanden. Dieser ist <span id="word-count"></span> Wörter lang.</div>
-    <div class="text-no seo-item"><i class="fa fa-times-circle"></i> Auf der Seite ist kein Text vorhanden.</div>
+    <div class="text-yes seo-item"><i class="fa fa-check-circle"></i> {% trans "There is text on this page. It is" %} <span id="word-count"></span> {% trans "words long." %}</div>
+    <div class="text-no seo-item"><i class="fa fa-times-circle"></i> {% trans "There is no text on this page." %}</div>
 
     <script src="{{STATIC_URL}}cmsplugin_seocheck/bower_components/jquery/dist/jquery.js"></script>
     <script src="{{STATIC_URL}}cmsplugin_seocheck/js/check.js"></script>
