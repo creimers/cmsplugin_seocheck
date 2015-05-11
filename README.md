@@ -3,7 +3,7 @@
 <!--[![Development Status](https://pypip.in/status/cmsplugin_seocheck/badge.svg)](https://pypi.python.org/pypi/cmsplugin_seocheck/)-->
 # djangocms SEO check plugin
 
-A djangocms plugin to check SEO aspects of your page.
+A djangocms plugin to check SEO aspects of your page. Inspired by [https://yoast.com/](https://yoast.com/).
 
 ## Installation
 
