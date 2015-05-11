@@ -34,11 +34,12 @@ class SEOViewTest(TestCase):
         mid.process_request(request)
         return request
 
+    @override_settings(ROOT_URLCONF='cmsplugin_seocheck.tests.urls')
     def test_get(self):
-        urls = 'cmsplugin_seocheck.tests.urls'
         response = self.client.get('/en/originalseourl/')
         self.assertEqual(response.status_code, 200)
 
+    @override_settings(ROOT_URLCONF='cmsplugin_seocheck.tests.urls')
     def test_toolbar(self):
         urls = 'cmsplugin_seocheck.tests.urls'
         request = self.get_request()
@@ -46,4 +47,4 @@ class SEOViewTest(TestCase):
         toolbar.get_left_items()
         seo_menu = toolbar.menus['seo_check']
         self.assertEqual(len(seo_menu.items), 1)
-        #self.assertEqual(len(seo_menu.find_items(ModalItem, url=reverse('cmsplugin_seocheck:check_modal'))), 1)
+        self.assertEqual(len(seo_menu.find_items(ModalItem, url=reverse('cmsplugin_seocheck:check_modal'))), 1)
