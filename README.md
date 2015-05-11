@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/creimers/cmsplugin_seocheck.svg?branch=master)](https://travis-ci.org/creimers/cmsplugin_seocheck)
 <!--[![Latest Version](https://pypip.in/version/cmsplugin_seocheck/badge.svg)](https://pypi.python.org/pypi/cmsplugin-seocheck/)-->
 <!--[![Supported Python versions](https://pypip.in/py_versions/cmsplugin_seocheck/badge.svg)](https://pypi.python.org/pypi/cmsplugin-seocheck/)-->
 <!--[![Development Status](https://pypip.in/status/cmsplugin_seocheck/badge.svg)](https://pypi.python.org/pypi/cmsplugin_seocheck/)-->
