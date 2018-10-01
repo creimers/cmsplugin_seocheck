@@ -1,3 +1,5 @@
+# don't try this at home!
+
 [![Build Status](https://travis-ci.org/creimers/cmsplugin_seocheck.svg?branch=master)](https://travis-ci.org/creimers/cmsplugin_seocheck)
 [![Coverage Status](https://coveralls.io/repos/creimers/cmsplugin_seocheck/badge.svg?branch=develop)](https://coveralls.io/r/creimers/cmsplugin_seocheck?branch=develop)
 [![Code Climate](https://codeclimate.com/github/creimers/cmsplugin_seocheck/badges/gpa.svg)](https://codeclimate.com/github/creimers/cmsplugin_seocheck)
